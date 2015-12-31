@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>拖动图层</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    window.onload = function () {
+        var _drag = false;
+        var dragObj = document.getElementById('drag');
+        dragObj.onmousedown = function (e) {
+            dragObj.style.cursor = 'move';
+            var _left = dragObj.offsetLeft;
+            var _top = dragObj.offsetTop;
+            var pos_x = e.clientX;
+            var pos_y = e.clientY;
+            document.onmousemove = function (e) {
+                if(!_drag) {
+                    var temp_x = e.clientX;
+                    var temp_y = e.clientY;
+                    dragObj.style.left = _left + temp_x - pos_x + 'px';
+                    dragObj.style.top = _top + temp_y - pos_y + 'px';
+                }
+            }
+        }
+        dragObj.onmouseup = function () {
+            dragObj.style.cursor = '';
+            _drag = false;
+            document.onmousemove = function () {
+                return false;
+            }
+        }
+    }
+</script>
+
+<style type="text/css">
+    * {
+        -moz-user-select:none
+        margin:0;
+        padding:0;
+    } 
+    #drag {
+        width:200px;
+        height:225px;
+        border:1px solid #849BCA;
+        background:url(a.jpg) no-repeat 5px 30px;
+        background-size:100%;
+    }
+    #title {
+        width:197px;
+        height:25px;
+        color:white;
+        font-size:20px;
+        font-weight:bold;
+        padding-left:3px;
+        background:#547BC9;
+    }
+</style>
+</head>
+    <body onselectstart="return false">
+        <div id="msg"></div>
+        <div id="drag" style="position:absolute;left:0px;top:0px;">
+            <div id="title">itpang</div>
+        </div>
+    </body>
+</html>

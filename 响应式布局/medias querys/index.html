@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="uft-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<title>响应式布局演示实例(medias querys)</title>
+	<style>
+		body,h2{margin:0px;padding:0px;color:white;}
+		section#main,header,aside,footer{
+			background:#333;
+			margin:5px 0;
+		}
+		h2{text-align:center;font-size:3em;}
+		section#container{
+			margin:0 auto;
+			width:960px;
+		}
+		header{
+			float:left;
+			width:100%;
+			line-height:100px;
+		}
+		
+		#left{
+			float:left;
+			width:200px;
+			line-height:400px;
+		}
+		
+		section#main{
+			float:left;
+			width:540px;
+			line-height:400px;
+			margin-left:10px;
+		}
+		
+		#right{
+			float:right;
+			width:200px;
+			line-height:400px;
+		}
+		
+		footer{
+			float:left;
+			width:100%;
+			line-height:80px;
+		}
+		
+
+	</style>
+	<link rel="stylesheet" type="text/css" media="screen and (min-width:1000px)" href="pc.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (min-width:640px) and (max-width:1000px)" href="pad.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width:639px)" href="phone.css" />
+	
+		
+</head>
+<body>
+	<section id="container">
+		<header>
+			<h2>Header</h2>
+		</header>
+		<aside id="left">
+			<h2>Left</h2>
+		</aside>
+		<section id="main">
+			<h2>Main</h2>
+		</section>
+		<aside id="right">
+			<h2>right</h2>
+		</aside>
+		<footer>
+			<h2>Footer</h2>
+		</footer>
+	</section>
+</body>
+</html>

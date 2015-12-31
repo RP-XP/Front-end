@@ -1,0 +1,53 @@
+/*我的收藏 begin*/
+.colletion .info{
+	height:50px;
+	font-size:16px;
+	line-height:50px;
+	color:#15191b;
+}
+.colletion .info .float1{
+	text-align:left;
+}
+.colletion .info .float2{
+	text-align:right;
+}
+.colletion ul li{
+	display:block;
+	background:#faf9f9;
+	margin-bottom:10px;
+	padding:10px;
+	position:relative;
+	font-size:14px;
+}
+.colletion ul li a{color:#000;}
+.colletion ul li .list{
+	height:110px;
+}
+.colletion ul li .img{
+	width:100px;
+	position:absolute;
+	left:10px;
+	top:10px;
+	border-radius:3px;
+}
+.colletion ul li .goods{
+	padding-left:110px;
+	padding-right:36px;
+	line-height:20px;
+}
+.colletion ul li .goods_title{
+	color:#15191b;
+}
+.colletion ul li .goods_info{
+	color:#15191b;
+}
+.colletion ul li .goods_price{
+	color:#f64540;
+}
+.colletion ul li .close{
+	position:absolute;
+	right:10px;
+	top:10px;
+	display:none;
+}
+/*end 我的收藏*/

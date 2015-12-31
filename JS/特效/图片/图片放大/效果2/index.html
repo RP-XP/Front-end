@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>JS鼠标点击图片放大查看 - 站长素材</title>
+<!-- CSS -->
+<link href='./css/styles.css' rel='stylesheet'>
+<!-- JS -->
+<script src='js/intense.js'></script>
+</head>
+<body>
+
+<header>
+<div class="logo">ii</div>
+<div class="main">
+<h1> Intense Image Viewer </h1>
+<h1> A javascript library for viewing images in a fully full screen. </h1>
+<h1> Click the images to see it in action!</h1>
+</div>
+</header>
+<section class="demos">
+<!-- Using divs for the demo, for formatting... you can use images if you want!  -->
+<div class="demo-image first" data-image="./img/h1_small.jpg" data-title="Beautiful fields" data-caption="With lots of wheaty puffs. Love those puffs."></div>
+<div class="demo-image second" data-image="./img/v1_small.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+<div class="demo-image third"  data-image="./img/h2_small.jpg" data-title="Chilling sheep" data-caption="To your breed, your fleece, your clan be true!"></div>
+</section>
+
+<script>
+window.onload = function() {
+var elements = document.querySelectorAll( '.demo-image' );
+Intense( elements );
+}
+</script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. </p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>

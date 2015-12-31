@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery validation plug-in - main demo</title>
+	<link rel="stylesheet" href="css/screen.css">
+	<script src="./jquery-1.11.1.js"></script>
+	<script src="./jquery.validate.min.js"></script>
+</head>
+<body>
+	<form name="demoform" id="demoForm" method="get" action="#">
+		用户名：<input type="text" name="username" /><br />
+		密码：<input type="password" id="password" name="password" /><br />
+		确认密码：<input type="password" name="sure_password" /><br />
+		
+		<input type="submit" value="登陆" />
+	</form>
+	
+	
+</body>
+<script>
+	$(document).ready(function(){
+		$("#demoForm").validate({
+			debug:true,
+			rules:{
+				username:{
+					required:true,
+					rangelength:[2,18],
+					remote:"remote.json",
+					email:true
+				},
+				password:{
+					required:true,
+					minlength:2,
+					maxlength:16
+				},
+				sure_password:{
+					equalTo:"#password"
+				}
+			},
+			messages:{
+				username:{
+					required:"必须填写用户名",
+					minlength:"用户名最小为2位",
+					maxlength:"用户名最大为10为",
+					rangelength:"用户名要在2-10位",
+					remote:"用户名不存在",
+					email:"必须填写有效的邮箱地址"
+				},
+				password:{
+					required:"必须填写密码",
+					minlength:"密码最小为2位",
+					maxlength:"密码最大为16位"
+				},
+				sure_password:{
+					equalTo:"2次输入密码不正确"
+				}
+			}
+		});
+	});
+</script>
+</html>

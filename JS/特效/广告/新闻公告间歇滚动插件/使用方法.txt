@@ -1,0 +1,26 @@
+BreakingNews-jQuery新闻公告间歇滚动插件，能够制作这种间歇滚动效果。通过配置，它能够设置标题、标题颜色、标题背景颜色、链接颜色、字体大小、边框、宽度、自动滚动、间歇时间等等，同时提供两种effect过度方式——淡入淡出（fade）和向上滑动（slide）。兼容主流浏览器，懒人图库推荐下载！
+
+使用方法：
+1、在head区域引入样式表文件breakingnews.css
+2、在head区域引入jquery-1.8.3.min.js和breakingnews.js
+3、调用JS配置，范例：
+$("#breakingnews1").BreakingNews({
+
+	background		:"#FFF",
+	title			:"BREAKING NEWS",
+	titlecolor		:"#FFF",
+	titlebgcolor		:"#099",
+	linkcolor		:"#333",
+	linkhovercolor		:"#099",
+	fonttextsize		:16,
+	isbold			:false,
+	border			:"solid 2px #099",
+	width			:"100%",
+	timer			:3000,
+	autoplay		:true,
+	effect			:"fade",
+
+});
+4、在你的网页中加入<!-- 代码 开始 --><!-- 代码 结束 -->注释区域代码即可
+
+*更多代码请访问：懒人图库 www.lanrentuku.com/js/

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title></title>
+<link rel="stylesheet" href="./css/public.css" />
+<link rel="stylesheet" href="./css/menu.css" />
+<script src="./js/jquery.js"></script>
+<script>
+$(function(){
+	//把菜单透明化
+	$(".content ul li div.black").fadeTo(0,0.7);
+});
+</script>
+</head>
+<body>
+<div class="all">
+	<!--header begin-->
+    <div class="header">
+    	<ul>
+        	<form action="">
+    			<img src="./images/menu/menu.png" height="45" alt="" class="menu">
+            	<input type="text" name="" id="" class="text float1" value="输入你想要查找的产品、商品">
+                <input type="image" class="img float1" src="./images/menu/search.png" alt="" />
+            </form>
+    	</ul>
+    </div>
+    <!--end header-->
+    
+    <!--begin content-->
+    <div class="content">
+    	<ul>
+    		<li class="li1"><div class="black"></div><a class="nav" href="./list.html"><span>日常用品</span><span class="like"><img src="./images/menu/like.png" alt=""> 2345</span></a></li>
+    		<li class="li2"><div class="black"></div><a class="nav" href="./list.html"><span>装饰用品</span><span class="like"><img src="./images/menu/unlike.png" alt=""> 2345</span></a></li>
+    		<li class="li3"><div class="black"></div><a class="nav" href="./list.html"><span>玩具用品</span><span class="like"><img src="./images/menu/like.png" alt=""> 2345</span></a></li>
+    		<li class="li4"><div class="black"></div><a class="nav" href="./list.html"><span>学习用品</span><span class="like"><img src="./images/menu/like.png" alt=""> 2345</span></a></li>
+    		<li class="li5"><div class="black"></div><a class="nav"><span>工作用品</span><span class="like"><img src="./images/menu/like.png" alt=""> 2345</span></a></li>
+    	</ul>
+    </div>
+    <!--end content-->
+    
+    <!--footer begin-->
+    <div class="footer">
+    	<ul>
+    		<li><a href="./index.html">最新</a></li>
+    		<li class="center"><a href="./find.html"  class="current">发现</a></li>
+    		<li><a href="./my.html">我的</a></li>
+    	</ul>
+    </div>
+    <!--end footer-->
+</div>
+</body>
+</html>

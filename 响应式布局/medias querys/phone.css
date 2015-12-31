@@ -1,0 +1,32 @@
+/*phone 640px */
+		@media screen and (max-width:639px){
+			h2{color:green;font-size:1.5em}
+			section#container{
+				width:100%;
+				-webkit-transition: width 1s ease;
+				-moz-transition: width 1s ease;
+				-o-transition: width 1s ease;
+				-ms-transition: width 2s ease;
+				transition: width 1s ease;
+			}
+			
+			#left{
+				float:left;
+				width:100%;
+				line-height:100px;
+			}
+			
+			section#main{
+				float:left;
+				width:100%;
+				line-height:200px;
+				margin-left:0px;
+			}
+			
+			#right{
+				float:left;
+				width:100%;
+				line-height:100px;
+				display:none;
+			}
+		}

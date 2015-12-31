@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="JS代码,其他代码,JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为BreakingNews-jQuery新闻公告间歇滚动插件，属于站长常用代码，更多其他代码代码请访问懒人图库JS代码频道。" />
+<title>BreakingNews-jQuery新闻公告间歇滚动插件_懒人图库</title>
+<link rel="stylesheet" href="css/breakingnews.css">
+<style>
+body {color:#FFF;background-color: #38545d;}
+.demo { width: 700px; margin: 0 auto;}
+.demo1 { margin-top: 100px;}
+.demo2 { margin-top: 50px;}
+a{color:#FFF}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/breakingnews.js"></script>
+<script>
+$(function(){
+	$('#breakingnews1').BreakingNews({
+		title: '公告'
+	});
+
+	$('#breakingnews2').BreakingNews({
+		title: '滚动新闻',
+		titlebgcolor: '#099',
+		linkhovercolor: '#099',
+		border: '1px solid #099',
+		timer: 4000,
+		effect: 'slide'	
+	});
+
+});
+</script>
+</head>
+<body>
+<!-- 代码 开始 -->
+<div class="demo demo1">
+    <h1>BreakingNews-jQuery间歇滚动插件</h1><br />
+	<div class="BreakingNewsController easing" id="breakingnews1">
+		<div class="bn-title"></div>
+		<ul>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">jqueryrotate制作百度红包大放送抽奖效果</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">jQuery全屏滚动插件fullPage.js</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">fullPage.js制作网易邮箱6.0介绍页面</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">onepage-scroll制作iPhone 5s页面</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">强大实用的jQuery幻灯片插件Owl Carousel</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">slick制作17173 ChainJoy2014幻灯片</a></li>
+		</ul>
+		<div class="bn-arrows"><span class="bn-arrows-left"></span><span class="bn-arrows-right"></span></div>	
+	</div>
+</div>
+
+<div class="demo demo2">
+	<div class="BreakingNewsController easing" id="breakingnews2">
+		<div class="bn-title"></div>
+		<ul id="abc">
+			<li><a href="http://www.lanrentuku.com/" target="_blank">jqueryrotate制作百度红包大放送抽奖效果</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">jQuery全屏滚动插件fullPage.js</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">fullPage.js制作网易邮箱6.0介绍页面</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">onepage-scroll制作iPhone 5s页面</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">强大实用的jQuery幻灯片插件Owl Carousel</a></li>
+			<li><a href="http://www.lanrentuku.com/" target="_blank">slick制作17173 ChainJoy2014幻灯片</a></li>
+		</ul>
+		<div class="bn-arrows"><span class="bn-arrows-left"></span><span class="bn-arrows-right"></span></div>	
+	</div>
+</div>
+
+<!-- 代码 结束 -->
+
+<div style="text-align:center;margin:50px 0">
+<p>来源：<a href="http://www.dowebok.com/121.html" target="_blank">dowebok</a>　代码整理：<a href="http://www.lanrentuku.com/" target="_blank">懒人图库</a>　感谢：<a href="http://zheye.cc/" target="_blank">折页网</a></p>
+<p>＊尊重他人劳动成果，转载请自觉注明出处！注：此代码仅供学习交流，请勿用于商业用途。</p>
+<p></p>
+<p><p>BreakingNews-jQuery新闻公告间歇滚动插件，能够制作这种间歇滚动效果。通过配置，它能够设置标题、标题颜色、标题背景颜色、链接颜色、字体大小、边框、宽度、自动滚动、间歇时间等等，同时提供两种effect过度方式——淡入淡出（fade）和向上滑动（slide）。兼容主流浏览器，懒人图库推荐下载！</p><p><br /></p><p>使用方法：</p><p>1、在head区域引入样式表文件breakingnews.css</p><p>2、在head区域引入jquery-1.8.3.min.js和breakingnews.js</p><p>3、调用JS配置，范例：</p><p>$(&quot;#breakingnews1&quot;).BreakingNews({</p><p><br /></p><p><span class="Apple-tab-span"></span>background<span class="Apple-tab-span"></span>:&quot;#FFF&quot;,</p><p><span class="Apple-tab-span"></span>title<span class="Apple-tab-span"></span>:&quot;BREAKING NEWS&quot;,</p><p><span class="Apple-tab-span"></span>titlecolor<span class="Apple-tab-span"></span>:&quot;#FFF&quot;,</p><p><span class="Apple-tab-span"></span>titlebgcolor<span class="Apple-tab-span"></span>:&quot;#099&quot;,</p><p><span class="Apple-tab-span"></span>linkcolor<span class="Apple-tab-span"></span>:&quot;#333&quot;,</p><p><span class="Apple-tab-span"></span>linkhovercolor<span class="Apple-tab-span"></span>:&quot;#099&quot;,</p><p><span class="Apple-tab-span"></span>fonttextsize<span class="Apple-tab-span"></span>:16,</p><p><span class="Apple-tab-span"></span>isbold<span class="Apple-tab-span"></span>:false,</p><p><span class="Apple-tab-span"></span>border<span class="Apple-tab-span"></span>:&quot;solid 2px #099&quot;,</p><p><span class="Apple-tab-span"></span>width<span class="Apple-tab-span"></span>:&quot;100%&quot;,</p><p><span class="Apple-tab-span"></span>timer<span class="Apple-tab-span"></span>:3000,</p><p><span class="Apple-tab-span"></span>autoplay<span class="Apple-tab-span"></span>:true,</p><p><span class="Apple-tab-span"></span>effect<span class="Apple-tab-span"></span>:&quot;fade&quot;,</p><p><br /></p><p>});</p><p>4、在你的网页中加入&lt;!-- 代码 开始 --&gt;&lt;!-- 代码 结束 --&gt;注释区域代码即可。</p></p>
+<p style="margin:20px 0"></p>
+</div>
+</body>
+</html>

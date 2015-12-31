@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://itpang.com/code/1water2.html -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title></title>
+    <!--<link rel="stylesheet" href="./css/public.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>-->
+    <style>
+        html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin: 0; padding: 0;}
+        input { padding-bottom: 0; padding-top: 0;}
+        input::-moz-focus-inner { border: medium none; padding: 0;}
+        input[type=”text”], input[type=”password”], textarea { outline-style: none;}
+        textarea { resize: none;}
+        img{border: 0 none; vertical-align:middle; }
+        table { border-collapse: collapse; border-spacing: 0; font-size: inherit; font: 100%;}
+        h1, h2, h3, h4, h5, h6,b { font-size: 100%; font-weight: normal;}
+        ul,li{ list-style: none; float:left;}
+        body, input, select, button, textarea { font-size: 16px; font-family:"Microsoft YaHei",Helvitica,Verdana,Tohoma,Arial,san-serif;vertical-align:middle;}
+        /*设置分辨率>640px显示640px 小于640px显示100%*/
+        @media screen and (min-width:640px){
+            body{
+                
+            }
+        }
+        body{
+            background: #000;
+        }
+        a, a:link,a:active, a:hover {color: #333;text-decoration: none;}
+        a:focus { outline: none; }
+		.box{
+			width:640px;
+			margin:0 auto;
+		}
+        .box ul li a{
+            width:100%;
+            display: block;
+            text-align: center;
+        }
+        .box ul li div{
+            margin:2px;
+            border:1px solid #DBDBDB;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .shop{
+            padding: 0 3px 10px;
+            background: #ececec;
+        }
+        .shop ul li div{
+            border:1px #ececec thin;
+            border-radius: 0;
+            margin:6px 3px;
+            background: #fff;
+            padding-bottom:10px;
+        }
+        .shop ul li div a{
+            text-align: left;
+        }
+        .shop ul li div a p{
+            padding: 3px;
+            font-size:12px;
+        }
+        .shop ul{
+            width:50%;
+            overflow: hidden;
+        }
+        .shop ul li{
+            float:left;
+            width:100%;
+            overflow: hidden;
+        }
+        .clear{clear: both;}
+    </style>
+	<style>
+		.topFalsh{position:fixed;}
+	</style>
+    <script src="./js/jquery.js"></script>
+    <script>
+        function getCheck(){
+            var documentH = document.documentElement.clientHeight;
+
+            var scrollH = document.documentElement.scrollTop || document.body.scrollTop;
+//            alert(documentH+scrollH+":"+getLastH());
+            return documentH+scrollH+500>=getLastH().height() ?true:false;
+        }
+        function getLastH(){
+            return $(".shop ul:first").height() > $(".shop ul:last").height() ? $(".shop ul:last") : $(".shop ul:first");
+        }
+        $(function(){
+
+            //滚动事件
+            $(window).scroll(function(){
+                //判断屏幕高度+滚动高度>最大的ul高度
+                if(getCheck()){
+                   //获取高度最高的一个ul
+                    for(var i = 1;i<10;i++){
+                        var ul = getLastH();
+                        var li = $("<li></li>");
+
+                        var div = $("<div></div>");
+                        li.append(div);
+
+                        var a =$("<a></a>");
+                        a.attr('href','#');
+                        div.append(a);
+
+                        var img = $("<img />");
+                        img.attr({src:'./images/'+i+'.jpg',width:'100%',onerror:'this.src="./images/test0.jpg"'});
+                        var p1 = $("<p></p>");
+                        p1.addClass("title");
+                        p1.html("黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br />——《花千骨》");
+                        a.append(img);
+                        a.append(p1);
+
+                        ul.append(li);
+                    }
+                }
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+<audio src="xiaogu.mp3" autoplay loop>
+</audio>
+<object codebase="main.swf" width="100%" height="800" class="topFalsh">
+	<param name="movie" value="main.swf">
+	<param name="quality" value="high">
+	<param name="wmode" value="transparent">
+	<embed src="http://cyldimages.changyou.com/xianjian6x/images/main.swf" width="100%" height="800" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent">
+</object>
+<!--box begin-->
+<div class="box shop">
+    <ul>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/1.jpg" onerror="this.src=&#39;./images/test.jpg&#39;" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/2.jpg" onerror="this.src=&#39;./images/test1.jpg&#39;" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/3.jpg" onerror="this.src=&#39;./images/test2.jpg&#39;" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/4.jpg" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/5.jpg" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/6.jpg" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/7.jpg" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/8.jpg" onerror="this.src=&#39;./images/test.jpg&#39;" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/9.jpg" onerror="this.src=&#39;./images/test.jpg&#39;" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/10.jpg" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/9.jpg" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/8.jpg" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/7.jpg" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="http://itpang.com/code/1water2.html#">
+                    <img src="./images/6.jpg" width="100%" alt="">
+                    <p class="title">黄泉路上，忘川河中，三生石旁，奈何桥上，我可见过你 <br>——《花千骨》</p>
+                </a>
+            </div>
+        </li>
+    </ul>
+    <div class="clear"></div>
+</div>
+<!--box menu-->
+
+</body></html>

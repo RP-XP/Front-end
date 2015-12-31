@@ -1,0 +1,90 @@
+/*header begin*/
+.header{
+	height:45px;
+	background:#000;
+}
+.header .menu,.header .img{
+	display:block;
+	position:absolute;
+	width:45px;
+}
+.header .img{
+	right:0;
+	background:#000;
+}
+.header .menu{
+	left:0;
+	background:#000;
+}
+.header input.text{
+	display:block;
+	/*width: -moz-calc(100% - 80px);
+	width: -webkit-calc(100% - 80px);
+ 	width: calc(100% - 80px);*/
+	width:100%;
+	height:30px;
+	border-radius:2px;
+	margin-top:7px;
+	background:#5d6062;
+	font-size:14px;
+	text-align:center !important;
+}
+/*end header*/
+
+/*content begin*/
+.content{
+	padding:45px 0;
+}
+.content ul li{
+	display:block;
+	height:150px;
+	line-height:150px;
+	text-align:center;
+	font-size:25px;
+	position:relative;
+	letter-spacing:3px;
+	color:#fff;
+}
+.content ul li .nav{
+	display:block;
+	width:100%;
+	height:150px;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:222;
+	color:#fff;
+}
+.content ul li.li1{
+	background:url(../images/menu/menu1.jpg) center no-repeat;
+	background-size:auto 100%;
+}
+.content ul li.li2{
+	background:url(../images/menu/menu2.jpg) center no-repeat;
+	background-size:auto 100%;
+}
+.content ul li.li3{
+	background:url(../images/menu/menu3.jpg) center no-repeat;
+	background-size:auto 100%;
+}
+.content ul li.li4{
+	background:url(../images/menu/menu4.jpg) center no-repeat;
+	background-size:auto 100%;
+}
+.content ul li.li5{
+	background:url(../images/menu/menu5.jpg) center no-repeat;
+	background-size:auto 100%;
+}
+.content ul li div.black{
+	background:#000;
+	position:absolute;
+	width:100%;
+	height:150px;
+	z-index:1;
+}
+.content ul li span.like{
+	padding-left:10px;
+	font-size:14px;
+	font-weight:normal;
+}
+/*end content*/

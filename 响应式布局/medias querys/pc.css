@@ -1,0 +1,30 @@
+/*1000px以上屏幕如果显示*/
+		@media screen and (min-width:1000px) {
+			h2{color:yellow;font-size:4em;}
+			section#container{
+				margin:0 auto;
+				width:1160px;
+				-webkit-transition: width 1s ease;
+				-moz-transition: width 1s ease;
+				-o-transition: width 1s ease;
+				-ms-transition: width 2s ease;
+				transition: width 1s ease;
+			}
+			
+			section#main{
+				width:640px;
+
+			}
+			
+			#right{
+				width:300px;
+				-webkit-transition: width 1s ease;
+				-moz-transition: width 1s ease;
+				-o-transition: width 1s ease;
+				-ms-transition: width 2s ease;
+				transition: width 1s ease;
+			}
+
+		}
+		
+		

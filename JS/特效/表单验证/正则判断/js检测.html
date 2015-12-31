@@ -1,0 +1,194 @@
+2.1 表单项不能为空
+
+<script language="javascript">
+<!--
+function CheckForm()
+{ 
+if (document.form.name.value.length == 0) { 
+alert("请输入您姓名!");
+document.form.name.focus();
+return false;
+}
+return true;
+}
+-->
+</script>
+
+2.2 比较两个表单项的值是否相同
+
+<script language="javascript">
+<!--
+function CheckForm()
+if (document.form.PWD.value != document.form.PWD_Again.value) { 
+alert("您两次输入的密码不一样！请重新输入.");
+document.ADDUser.PWD.focus();
+return false;
+}
+return true;
+}
+-->
+</script>
+
+2.3 表单项只能为数字和"_",用于电话/银行帐号验证上,可扩展到域名注册等
+
+<script language="javascript">
+<!--
+function isNumber(String)
+{ 
+var Letters = "1234567890-"; //可以自己增加可输入值
+var i;
+var c;
+if(String.charAt( 0 )==''-'')
+return false;
+if( String.charAt( String.length - 1 ) == ''-'' )
+return false;
+for( i = 0; i < String.length; i ++ )
+{ 
+c = String.charAt( i );
+if (Letters.indexOf( c ) < 0)
+return false;
+}
+return true;
+}
+function CheckForm()
+{ 
+if(! isNumber(document.form.TEL.value)) { 
+alert("您的电话号码不合法！");
+document.form.TEL.focus();
+return false;
+}
+return true;
+}
+-->
+</script>
+
+
+2.4 表单项输入数值/长度限定
+
+<script language="javascript">
+<!--
+function CheckForm() 
+{ 
+if (document.form.count.value > 100 || document.form.count.value < 1)
+{ 
+alert("输入数值不能小于零大于100!");
+document.form.count.focus();
+return false;
+}
+if (document.form.MESSAGE.value.length<10)
+{ 
+alert("输入文字小于10!");
+document.form.MESSAGE.focus();
+return false;
+}
+return true;
+}
+//-->
+</script>
+
+2.5 中文/英文/数字/邮件地址合法性判断
+
+<SCRIPT LANGUAGE="javascript">
+<!--
+
+function isEnglish(name) //英文值检测
+{ 
+if(name.length == 0)
+return false;
+for(i = 0; i < name.length; i++) { 
+if(name.charCodeAt(i) > 128)
+return false;
+}
+return true;
+}
+
+function isChinese(name) //中文值检测
+{ 
+if(name.length == 0)
+return false;
+for(i = 0; i < name.length; i++) { 
+if(name.charCodeAt(i) > 128)
+return true;
+}
+return false;
+}
+
+function isMail(name) // E-mail值检测
+{ 
+if(! isEnglish(name))
+return false;
+i = name.indexOf(" at ");
+j = name dot lastIndexOf(" at ");
+if(i == -1)
+return false;
+if(i != j)
+return false;
+if(i == name dot length)
+return false;
+return true;
+}
+
+function isNumber(name) //数值检测
+{ 
+if(name.length == 0)
+return false;
+for(i = 0; i < name.length; i++) { 
+if(name.charAt(i) < "0" || name.charAt(i) > "9")
+return false;
+}
+return true;
+}
+
+function CheckForm()
+{ 
+if(! isMail(form.[email].value)) { 
+alert("您的电子邮件不合法！");
+form.[email].focus();
+return false;
+}
+if(! isEnglish(form.name.value)) { 
+alert("英文名不合法！");
+form.name.focus();
+return false;
+}
+if(! isChinese(form.cnname.value)) { 
+alert("中文名不合法！");
+form.cnname.focus();
+return false;
+}
+if(! isNumber(form.PublicZipCode.value)) { 
+alert("邮政编码不合法！");
+form.PublicZipCode.focus();
+return false;
+}
+return true;
+}
+//-->
+</SCRIPT>
+
+2.6 限定表单项不能输入的字符
+
+<script language="javascript">
+<!--
+
+function contain(str,charset)// 字符串包含测试函数
+{ 
+var i;
+for(i=0;i<charset.length;i++)
+if(str.indexOf(charset.charAt(i))>=0)
+return true;
+return false;
+}
+
+function CheckForm()
+{ 
+if ((contain(document.form.NAME.value, "%\(\)><")) || (contain(document.form.MESSAGE.value, "%\(\)><")))
+{ 
+alert("输入了非法字符");
+document.form.NAME.focus();
+return false;
+}
+return true;
+}
+//-->
+</script> 

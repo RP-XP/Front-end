@@ -1,0 +1,110 @@
+/*******************公共样式类***************/
+body,div,p,span,h1,h2,h3,h4,h5,h6,a,img,ul,ol,li,input,textarea,form,table,tr,td{
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0;
+}
+body{
+	font-family:'Microsoft YaHei', Arial, Helvetica, sans-serif;
+	/*font-size:62.5%;*/
+}
+.all{
+	
+	margin:0 auto;
+	position:relative;
+}
+/*浮动和清除浮动*/
+.float1{float:left;}
+.float2{float:right;}
+.clear{clear:both;}
+
+.hidden{
+	display:none;
+}
+
+/*公共链接类*/
+a{
+	text-decoration:none;
+	color:#666;
+}
+/*公共颜色*/
+.red{
+	color:#fc4c1c !important;
+}
+/*line*/
+.line{
+	height:25px;
+	background:#e6e6e6;
+	border-bottom:2px solid #dddddd;
+	border-top:2px solid #dddddd;
+}
+.box{
+	padding:45px 10px;
+}
+/*border*/
+.noBorder{border:none !important;}
+
+/*header begin*/
+.header{
+	width:100%;
+	height:45px;
+	line-height:45px;
+	background:#000;
+	color:#fff;
+	text-align:center;
+	font-size:16px;
+	position:fixed;
+	z-index:100;
+	left:0;
+	top:0;
+	text-shadow:0 0 2px #f5f5f5;
+}
+.header span{
+	position:absolute;
+	left:50%;
+	margin-left:-32px;
+}
+.header a img{
+	margin-top:8px;
+	padding-right:5px;
+}
+/*header end*/
+
+/*footer begin*/
+.footer{
+	width:100%;
+	height:45px;
+	background:#000;
+	position:fixed;
+	left:0;
+	bottom:0;
+	text-align:center;
+	line-height:45px;
+	color:#fff;
+	z-index:11111111;
+}
+.footer_details{
+	background:#fff;
+	border-top:1px solid #dfdfe3;
+	z-index:111111;
+}
+.footer ul li{
+	float:left;
+	width:33%;
+	height:45px;
+	text-align:center;
+}
+.footer ul li.center{width:34%;}
+.footer ul li a{
+	font-size:16px;
+	display:block;
+	height:45px;
+	line-height:45px;
+	color:#fff;
+	text-shadow:0 0 2px #f5f5f5;
+}
+.footer ul li a.current{
+	background:#464748 !important;
+}
+/*end footer*/

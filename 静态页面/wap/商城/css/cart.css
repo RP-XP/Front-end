@@ -1,0 +1,83 @@
+/*footer begin*/
+.footer{
+	color:#fff;
+	font-size:14px;
+}
+.footer a{
+	color:#fff;
+}
+.footer .float1{
+	width:200px;
+	text-indent:30px;
+	text-align:left;
+}
+.footer .float2{
+	width:70px;
+	background:#e4393c;
+	padding:0 10px;
+}
+/*end footer*/
+.cart{
+	padding-top:45px;
+}
+#checkbox,.check{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	background:url(../images/cart/checkbox1.png) center no-repeat;
+	background-size:100% 100%;
+	cursor:pointer;
+	position:absolute;
+	top:15px;
+	left:10px;
+}
+.check{
+	top:50px;
+}
+.uncheck{
+	background:url(../images/cart/checkbox2.png) center no-repeat !important;
+	background-size:100% 100% !important;
+}
+.cart ul li{
+	padding-left:40px !important;
+}
+.cart ul li .img{
+	left:40px !important;
+}
+.cart ul li .num{
+	width:80px;
+	height:20px;
+	margin-top:5px;
+	border:1px solid #ccc;
+	border-radius:2px;
+}
+.cart ul li .cut{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	background:red;
+	background:url(../images/cart/ico1.png) center no-repeat;
+	background-size:auto 80%;
+}
+.cart ul li .add{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	background:red;
+	background:url(../images/cart/ico2.png) center no-repeat;
+	background-size:auto 80%;
+}
+.cart ul li input{
+	width:40px;
+	height:20px;
+	display:block;
+	text-align:center;
+}
+
+
+
+
+
+
+
+

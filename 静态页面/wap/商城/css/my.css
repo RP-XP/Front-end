@@ -1,0 +1,88 @@
+
+/*content begin*/
+.content{
+	padding:45px 0 100px;
+}
+.content .user{
+	height:150px;
+	background:url(../images/my/bg.png) center  bottom no-repeat;
+	background-size:100% 150px;
+	position:relative;
+	color:#333333;
+	line-height:150px;
+	font-size:20px;
+	text-indent:130px;
+}
+.content .user .photo{
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	position:absolute;
+	top:25px;
+	left:25px;
+}
+.content ul{
+	overflow:hidden;
+	padding:10px 10px 0;
+}
+.content ul li{
+	width:25%;
+	height:80px;
+	font-size:15px;
+	color:#666666;
+	display:block;
+	float:left;
+	text-align:center;
+	position:relative;
+}
+.content ul li span.title{
+	display:block;
+	height:20px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	text-align:center;
+}
+.content ul li span.num{
+	position:absolute;
+	width:20px;
+	height:20px;
+	background:url(../images/my/num.png)  center no-repeat;
+	right:20px;
+	top:0;
+	color:#fc3600;
+}
+.content ul li.li1{
+	background:url(../images/my/1.png) top center no-repeat;
+}
+.content ul li.li2{
+	background:url(../images/my/2.png) top center no-repeat;
+}
+.content ul li.li3{
+	background:url(../images/my/3.png) top center no-repeat;
+}
+.content ul li.li4{
+	background:url(../images/my/4.png) top center no-repeat;
+}
+
+.content ol{
+	overflow:hidden;
+	padding:0 10px;
+}
+.content ol li{
+	height:45px;
+	line-height:45px;
+	font-size:16px;
+	letter-spacing:1px;
+	display:block;
+	border-bottom:1px solid #dddddd;
+	color:#666666;
+}
+.content ol li a{
+	width:98%;
+	background:url(../images/my/right.png) right center no-repeat;
+	display:block;
+	height:45px;
+}
+
+/*end content*/
