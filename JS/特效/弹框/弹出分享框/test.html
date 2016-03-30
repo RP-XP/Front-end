@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/layer/layer.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                var html = '<ul>\
+                                <li><a href="javascript:void(0)"><img src="./images/icon1.png" width="100%" alt=""></a></li>\
+                                <li><a href="javascript:void(0)"><img src="./images/icon2.png" width="100%" alt=""></a></li>\
+                                <li><a href="javascript:void(0)"><img src="./images/icon3.png" width="100%" alt=""></a></li>\
+                                <li><a href="javascript:void(0)"><img src="./images/icon4.png" width="100%" alt=""></a></li>';
+                //弹出层
+                layer.open({
+                    type: 1,
+                    skin: 'all', //样式类名
+                    closeBtn: 0, //不显示关闭按钮
+                    shift: 2,
+                    area: ['100%', '123px'],
+                    title:0,
+                    offset: 'rb',
+                    shadeClose: true, //开启遮罩关闭
+                    content: html
+                });
+            });
+        });
+    </script>
+    <style>
+        *{padding:0;margin:0;}
+        ul,ol,li{list-style: none;}
+        .all ul{
+            overflow: hidden;
+            padding:10px;
+            background: #ccc;
+        }
+        .all ul li{
+            width:25%;
+            float:left;
+
+        }
+        .all ul li a{
+            display: block;
+            padding:10px;
+        }
+        .all ul li a img{
+            -webkit-border-radius: 50%;;
+            -moz-border-radius: 50%;;
+            border-radius: 50%;;
+        }
+        .all .share{padding:10px;}
+        .all button{display: block;width:100%;background: #fff;border:1px solid #ccc;line-height: 30px; padding:10px;
+        border-radius: 30px;outline:none;}
+    </style>
+</head>
+<body>
+    <div class="all">
+        <img src="./images/test.jpg" width="100%" alt="">
+        <div class="share">
+            <button>分享</button>
+        </div>
+    </div>
+</body>
+</html>
